@@ -1,5 +1,8 @@
 package com.tw.OneToOne;
 
+import com.tw.OneToOne.dao.AppDAO;
+import com.tw.OneToOne.entity.Instructor;
+import com.tw.OneToOne.entity.InstructorDetail;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -8,14 +11,22 @@ import org.springframework.context.annotation.Bean;
 @SpringBootApplication
 public class OneToOneApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(OneToOneApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(OneToOneApplication.class, args);
+    }
 
     @Bean
-    public CommandLineRunner commandLineRunner(String[] args){
+    public CommandLineRunner commandLineRunner(AppDAO appDAO) {
         return runner -> {
-            System.out.println("Hello world!");
+            createInstructor(appDAO);
         };
+    }
+
+    private void createInstructor(AppDAO appDAO) {
+        Instructor tempInstructor = new Instructor("Avyukt", "Vats", "avyu123434@gmail.com");
+        InstructorDetail tempInstructorDetail = new InstructorDetail("http://www.youtube.com/enigma", "Swimming");
+        tempInstructor.setInstructorDetail(tempInstructorDetail);
+        System.out.println("Saving " + tempInstructor);
+        appDAO.save(tempInstructor);
     }
 }
