@@ -21,8 +21,7 @@ public class InstructorDetail {
 
     }
 
-    public InstructorDetail(String id, String youtubeChannel, String hobby) {
-        this.id = id;
+    public InstructorDetail(String youtubeChannel, String hobby) {
         this.youtubeChannel = youtubeChannel;
         this.hobby = hobby;
     }
