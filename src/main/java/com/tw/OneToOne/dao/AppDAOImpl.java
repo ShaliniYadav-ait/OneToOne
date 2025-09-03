@@ -1,6 +1,7 @@
 package com.tw.OneToOne.dao;
 
 import com.tw.OneToOne.entity.Instructor;
+import com.tw.OneToOne.entity.InstructorDetail;
 import jakarta.persistence.EntityManager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -33,6 +34,11 @@ public class AppDAOImpl implements AppDAO {
         Instructor tempInstructor = theEntityManager.find(Instructor.class, theId);
         theEntityManager.remove(tempInstructor);
         return true;
+    }
+
+    @Override
+    public InstructorDetail findInstructorDetailById(int theId) {
+        return theEntityManager.find(InstructorDetail.class, theId);
     }
 
 
