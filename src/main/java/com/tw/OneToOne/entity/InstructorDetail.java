@@ -3,7 +3,7 @@ package com.tw.OneToOne.entity;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "instructor")
+@Table(name = "instructor_detail")
 public class InstructorDetail {
 
     @Id
