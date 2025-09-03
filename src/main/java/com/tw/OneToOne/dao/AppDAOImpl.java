@@ -3,9 +3,10 @@ package com.tw.OneToOne.dao;
 import com.tw.OneToOne.entity.Instructor;
 import jakarta.persistence.EntityManager;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-
+@Repository
 public class AppDAOImpl implements AppDAO {
 
     private final EntityManager theEntityManager;
