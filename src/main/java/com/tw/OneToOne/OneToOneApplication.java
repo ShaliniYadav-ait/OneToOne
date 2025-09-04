@@ -46,7 +46,7 @@ public class OneToOneApplication {
 //        System.out.println("Deleted!");
 //    }
 
-//    private void findInstructor(AppDAO appDAO) {
+    //    private void findInstructor(AppDAO appDAO) {
 //        int theId = 1;
 //        System.out.println("Finding id : " + theId);
 //        Instructor tempInstructor = appDAO.findInstructorById(theId);
@@ -54,8 +54,8 @@ public class OneToOneApplication {
 //    }
 //
 //    private void createInstructor(AppDAO appDAO) {
-//        Instructor tempInstructor = new Instructor("Shalini", "Yadav", "shal123434@gmail.com");
-//        InstructorDetail tempInstructorDetail = new InstructorDetail("http://www.youtube.com/enigmaShali", "Drawing");
+//        Instructor tempInstructor = new Instructor("Abhishek", "Jha", "abhi123434@gmail.com");
+//        InstructorDetail tempInstructorDetail = new InstructorDetail("http://www.youtube.com/enigma2", "Cricket");
 //        tempInstructor.setInstructorDetail(tempInstructorDetail);
 //        System.out.println("Saving " + tempInstructor);
 //        appDAO.save(tempInstructor);
