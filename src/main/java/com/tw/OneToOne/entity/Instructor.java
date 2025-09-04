@@ -31,8 +31,7 @@ public class Instructor {
             cascade = {CascadeType.DETACH,
                     CascadeType.MERGE,
                     CascadeType.PERSIST,
-                    CascadeType.REFRESH},
-            fetch = FetchType.EAGER)
+                    CascadeType.REFRESH})
     @Column(name = "course")
     private List<Course> courses;
 
