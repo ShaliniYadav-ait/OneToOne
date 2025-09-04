@@ -101,7 +101,6 @@ public class Instructor {
                 ", lastName='" + lastName + '\'' +
                 ", email='" + email + '\'' +
                 ", instructorDetail=" + instructorDetail +
-                ", courses=" + courses +
                 '}';
     }
 
