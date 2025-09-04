@@ -25,9 +25,9 @@ public class OneToOneApplication {
     }
 
 //    private void deleteIntructorDetail(AppDAO appDAO) {
-//        int theId = 2;
+//        int theId = 4;
 //        System.out.println("Deleting : " + theId);
-//        appDAO.deleteInstructorById(theId);
+//        appDAO.deleteInstructorDetailById(theId);
 //        System.out.println("Deleted");
 //    }
 
