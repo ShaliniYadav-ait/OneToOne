@@ -20,8 +20,16 @@ public class OneToOneApplication {
 //            findInstructor(appDAO);
 //            deleteInstructor(appDAO);
 //            findInstructorDetail(appDAO);
+//            deleteIntructorDetail(appDAO);
         };
     }
+
+//    private void deleteIntructorDetail(AppDAO appDAO) {
+//        int theId = 2;
+//        System.out.println("Deleting : " + theId);
+//        appDAO.deleteInstructorById(theId);
+//        System.out.println("Deleted");
+//    }
 
 //    private void findInstructorDetail(AppDAO appDAO) {
 //        int theId = 3;
