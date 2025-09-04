@@ -22,8 +22,18 @@ public class OneToOneApplication {
 //            findInstructorDetail(appDAO);
 //            deleteIntructorDetail(appDAO);
 //            createInstructorWithCourses(appDAO);
+//            findInstructorWithCourses(appDAO);
         };
     }
+
+//    private void findInstructorWithCourses(AppDAO appDAO) {
+//        int theId = 1;
+//        System.out.println("Finding " + theId);
+//        Instructor tempInstructor = appDAO.findInstructorById(theId);
+//        System.out.println("temp Instructor : " + tempInstructor);
+//        System.out.println("Courses : " + tempInstructor.getCourses());
+//        System.out.println("Done");
+//    }
 
 //    private void createInstructorWithCourses(AppDAO appDAO) {
 //        Instructor tempInstructor = new Instructor("Abhishek", "Jha", "abhi123434@gmail.com");
