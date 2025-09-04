@@ -24,8 +24,18 @@ public class OneToOneApplication {
 //            createInstructorWithCourses(appDAO);
 //            findInstructorWithCourses(appDAO);
 //            findCoursesForInstructor(appDAO);
+//            findInstructorWithCoursesJoinFetch(appDAO);
         };
     }
+
+//    private void findInstructorWithCoursesJoinFetch(AppDAO appDAO) {
+//        int theId = 1;
+//        System.out.println("Finding Instructor : " + theId);
+//        Instructor instructor = appDAO.findInstructorByIdJoinFetch(theId);
+//        System.out.println("Instructor is : " + instructor);
+//        System.out.println("Courses  : " + instructor.getCourses());
+//        System.out.println("done");
+//    }
 
 //    private void findCoursesForInstructor(AppDAO appDAO) {
 //        int theId = 1;
