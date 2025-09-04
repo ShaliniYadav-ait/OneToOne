@@ -2,6 +2,7 @@ package com.tw.OneToOne.entity;
 
 import jakarta.persistence.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -102,5 +103,13 @@ public class Instructor {
                 ", instructorDetail=" + instructorDetail +
                 ", courses=" + courses +
                 '}';
+    }
+
+    public void add(Course theCourse) {
+        if (courses == null) {
+            courses = new ArrayList<>();
+        }
+        courses.add(theCourse);
+        theCourse.setInstructor(this);
     }
 }
