@@ -1,7 +1,10 @@
 package com.tw.OneToOne.dao;
 
+import com.tw.OneToOne.entity.Course;
 import com.tw.OneToOne.entity.Instructor;
 import com.tw.OneToOne.entity.InstructorDetail;
+
+import java.util.List;
 
 public interface AppDAO {
 
@@ -14,4 +17,6 @@ public interface AppDAO {
     InstructorDetail findInstructorDetailById(int theId);
 
     boolean deleteInstructorDetailById(int theId);
+
+    List<Course> findCoursesByInstructor(int theId);
 }
